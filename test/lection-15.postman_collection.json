@@ -1,0 +1,152 @@
+{
+  "info": {
+    "_postman_id": "1731cdef-1e81-4a86-a2bb-f69bd3c34a3e",
+    "name": "lection-19",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13934503"
+  },
+  "item": [
+    {
+      "name": "health-check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://arch.homework/api/v1/health/",
+          "protocol": "http",
+          "host": [
+            "arch",
+            "homework"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "health",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "READ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://arch.homework/user/1",
+          "protocol": "http",
+          "host": [
+            "arch",
+            "homework"
+          ],
+          "path": [
+            "user",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"Denis\",\r\n  \"first_name\": \"Batkovich\",\r\n  \"last_name\": \"string_3\",\r\n  \"email\": \"string_1\",\r\n  \"phone\": \"string_2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://arch.homework/user/",
+          "protocol": "http",
+          "host": [
+            "arch",
+            "homework"
+          ],
+          "path": [
+            "user",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"first_name\": \"hello\",\r\n  \"last_name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"phone\": \"string\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://arch.homework/user/1",
+          "protocol": "http",
+          "host": [
+            "arch",
+            "homework"
+          ],
+          "path": [
+            "user",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://arch.homework/user/2",
+          "protocol": "http",
+          "host": [
+            "arch",
+            "homework"
+          ],
+          "path": [
+            "user",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
