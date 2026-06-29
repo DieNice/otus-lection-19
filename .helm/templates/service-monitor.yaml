@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: monitorable-application-monitor
+spec:
+  selector:
+    matchLabels:
+      app: lection-19-app # Лейбл для матчинга с сервисом (лейбл должен быть задан на сервисе)
+      environment: prod
+  endpoints:
+    - port: http-api  # Имя порта из Service
+      path: /metrics/  # Путь к метрикам вашего приложения
+      interval: 30s
